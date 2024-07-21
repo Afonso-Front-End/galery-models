@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "Ferrari-SansMedium";
+  src: url("../font/Ferrari-SansMedium.woff2");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../font/OpenSans-Regular-webfont.woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D0D;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+#content {
+  position: absolute;
+  width: 100%;
+}
+
+
+.display-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100vh;
+  /* gap: 2vw; */
+  justify-content: start;
+  background-color: #000;
+}
+
+.text-loader {
+  font-size: 2rem;
+  opacity: 0;
+  width: 0%;
+  height: 0.3vh;
+  background-color: #EBEDF2;
+}
+
+/* .text-23 {
+
+  width: 10%;
+  height: 0.3vh;
+  background-color: #EBEDF2;
+
+}
+
+.text-63 {
+
+  width: 100%;
+  height: 0.3vh;
+  background-color: #EBEDF2;
+
+}
+
+.text-97 {
+
+  width: 100%;
+  height: 0.3vh;
+  background-color: #EBEDF2;
+}
+
+.text-10 {
+
+  width: 100%;
+  height: 0.3vh;
+  background-color: #EBEDF2;
+} */
+
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.content-paragrafo-1,
+.content-paragrafo-2 {
+  text-align: center;
+  z-index: 999;
+  font-size: 1.2rem;
+  font-family: "Ferrari-SansMedium";
+  color: #EBEDF2;
+}
+
+.nav {
+  margin-top: 3vh;
+  gap: 2vw;
+  position: absolute;
+  bottom: 1vw;
+}
+
+.nav a {
+  text-decoration: none;
+  z-index: 999;
+  font-size: 1.2rem;
+  color: #EBEDF2;
+  font-family: "OpenSans-Regular";
+  text-transform: lowercase;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#one-text {
+  position: absolute;
+  top: 120%;
+}
+
+.heading-text {
+  font-size: 10vw;
+  font-family: "Ferrari-SansMedium";
+  position: relative;
+
+}
+
+.heading-text span {
+  position: absolute;
+  display: flex;
+  font-family: "OpenSans-Regular";
+  font-size: 20px;
+  right: 0;
+  overflow: hidden;
+white-space: 5px;
+}
+
+.section-img {
+  position: relative;
+  margin-left: 35%;
+  width: 35%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 42%;
+  background-repeat: no-repeat;
+  z-index: 99999;
+  cursor: pointer;
+
+}
+
+
+.info-img {
+  position: absolute;
+  right: -90%;
+}
+
+.info-img .info-img-h1 {
+  font-family: "Ferrari-SansMedium";
+  font-size: 2vw;
+}
+
+.info-img .info-img-p1 {
+  font-family: "OpenSans-Regular";
+  font-size: 1rem;
+}
+
+#img-one {
+  background-image: url(../assets/image/one-img.jpg);
+}
+
+#img-two {
+  background-image: url(../assets/image/tow-img.jpg);
+}
+
+#img-three {
+  background-image: url(../assets/image/three-img.jpg);
+}
+
+#img-four {
+  background-image: url(../assets/image/four-img.jpg);
+}
+
+#img-five {
+  background-image: url(../assets/image/five-img.jpg);
+}
+
+#img-six {
+  background-image: url(../assets/image/six-img.jpg);
+}
+
+#img-seven {
+  background-image: url(../assets/image/seven-img.jpg);
+}
