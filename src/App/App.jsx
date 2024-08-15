@@ -32,7 +32,7 @@ const App = () => {
 
                 <div className="fixed display-flex">
                     <div className="flex-p-content display-flex-column">
-                        <div className="content-paragrafo-1">DEVELOPER <i>design</i></div>
+                        <div className="content-paragrafo-1">DEVELOPER <i>tutotial</i></div>
                         <div className="content-paragrafo-2"></div>
                         <div className="nav display-flex">
                             <a className="info" href="#">info</a>
