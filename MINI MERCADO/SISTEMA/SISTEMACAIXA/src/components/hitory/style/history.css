@@ -1,0 +1,392 @@
+.container-table {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #202225;
+}
+
+.content-table {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    background-color: #2D3033;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.table-title {
+    height: 50px;
+    font-family: "Montserrat";
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    position: relative;
+}
+
+.table-title h1 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.list-order {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 200px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.list-order-active {
+    height: auto;
+}
+
+.list-order ol {}
+
+
+.list-order ol li {
+    height: 35px;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+.list-order ol li:hover {
+    background-color: #2d3033a2;
+    color: #F2F2F2;
+}
+
+.container-table-venda {
+    height: calc(100% - 50px);
+    overflow: auto;
+    padding: 0.5rem;
+}
+
+.container-table-venda .table-venda {
+    text-align: center;
+}
+
+.container-table-venda .table-venda {
+    text-align: center;
+}
+
+
+.table-venda {
+    width: 100%;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+}
+
+.table-venda thead tr th {
+    padding: 0.2rem 0.5rem;
+    background-color: #D93636;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* .table-venda tbody tr td  {
+    padding: 0rem;
+} */
+.table-venda tbody tr td input {
+    background-color: #86BF5E;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    outline: none;
+    border: none;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.table-venda tbody tr td input:disabled {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    outline: none;
+    border: none;
+    color: #F2F2F2;
+}
+
+.table-venda tbody tr:nth-child(even) {
+    background-color: #f9f9f918;
+}
+
+.table-venda tbody tr:nth-child(odd) {
+    background-color: #f9f9f936;
+
+}
+
+#expandir {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    color: #202225;
+    border-radius: 2px;
+    border: none;
+    font-weight: 700;
+}
+
+/* --======================= */
+
+.container-data-selecionada {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2D3033;
+}
+
+.content-data-selecionada {
+    height: 100%;
+    /* background-color: rgb(39, 34, 26); */
+}
+#next-to {
+    background-color:#F2F2F2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 60px;
+    cursor: pointer;
+}
+
+.topo-data-selecionada {
+    background-color: #D93636;
+    height: 50px;
+    padding: 0.3rem;
+    position: relative;
+}
+.topo-data-selecionada .topo-data p span{
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    color: black;
+}
+
+
+.topo-data-selecionada p {
+    font-size: 25px;
+}
+
+.footer-data-selecionada {
+    width: 100%;
+    height: 100px;
+    padding: 0.3rem;
+    background-color: #2D3033;
+}
+
+.div-footer {
+    border: 1px solid #F2F2F2;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    font-family: "Montserrat";
+}
+
+.div-footer p {
+    font-size: 25px;
+}
+
+.table-data {
+    height: calc(100% - 150px);
+    overflow: auto;
+    background-color: #2D3033;
+    /* padding: 0 0.3rem; */
+    text-transform: capitalize;
+}
+
+.table-data::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table-data::-webkit-scrollbar-thumb {
+    background-color: #F2F2F2;
+    border-radius: 3px;
+}
+
+.table-data .table tbody tr td {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+/* Nota */
+.container-nota-fiscal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    background-color: #202225;
+}
+.content-nota-fiscal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    position: relative;
+    background-color: #2D3033;
+}
+.logo p{
+    color: black;
+}
+#id {
+    color: #F5426C;
+}
+.pagamento {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: black;
+}
+.pagamento p {
+    color: black;
+}
+.pagamento p:nth-child(2){
+    width: 50%;
+    text-align: left;
+    color: #F5426C;
+}
+.pagamento-troco {
+    width: 100%;
+    text-align: right;
+    color: #F5426C;
+}
+.pagamento-troco p{
+    color: #F5426C;
+}
+
+.exite-nota-fiscal {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.exite-nota-fiscal #exite{
+    width: 60px;
+    cursor: pointer;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+
+.container-nota {
+    border-top: 1px solid rgba(0, 0, 0, 0.423);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.423);
+    
+}
+.nota-fiscal {
+    /* background-color: #FDF5AE; */
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 80%;
+    max-width: 100%;
+    color: black;
+    overflow: auto;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 3px #00000086;
+    user-select: none;
+}
+.table-nota-fiscal {
+    color: black;
+    width: 100%;
+}
+.table-nota-fiscal thead tr th {
+    color: black;
+    font-size: 13px;
+    border-collapse: collapse;
+    text-transform: capitalize;
+}
+.table-nota-fiscal tbody tr td {
+    color: black;
+    font-size: 10px;
+    border-collapse: collapse;
+    text-transform: capitalize;
+}
+.table-nota-fiscal thead th:nth-child(1),
+.table-nota-fiscal thead th:nth-child(2),
+.table-nota-fiscal thead th:nth-child(3) {
+    text-align: left;
+}
+
+
+.table-nota-fiscal tbody tr td:nth-child(4),
+.table-nota-fiscal tbody tr td:nth-child(5),
+.table-nota-fiscal tbody tr td:nth-child(6),
+.table-nota-fiscal tbody tr td:nth-child(7){
+    text-align: center;
+}
+
+.subtotal-nota strong{
+    color: black;
+    display: flex;
+    gap: 5px;
+}
+.subtotal-nota strong p{
+    color: black;
+}
+
+.content-logo .logo h1{
+    font-size: 20px;
+    color: #292929;
+    font-weight: 800;
+    font-family: "Montserrat";
+    text-align: right;
+}
+.content-logo .logo p{
+    text-align: right;
+    font-size: 12px;
+}
+
+.data-mercado p{
+    color: black;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+}
+
+/* inicio */
+.inicio {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+.inicio .inicio-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inicio .inicio-message p{
+    color: #202225;
+    font-weight: 700;
+    font-size: 30px;
+}

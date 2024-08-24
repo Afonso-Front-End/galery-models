@@ -1,0 +1,10 @@
+.barcode {
+    background-color: yellowgreen ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}

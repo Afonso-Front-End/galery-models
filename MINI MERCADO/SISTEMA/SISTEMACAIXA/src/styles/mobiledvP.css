@@ -1,0 +1,84 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+    /* PDV */
+    .left {
+        max-width: 300px;
+    }
+
+    .rigth {
+        width: calc(100% - 300px);
+    }
+
+    menu nav ul li {
+        font-size: 10px;
+    }
+
+    menu nav ul li a {
+        padding: 1.3rem;
+    }
+
+    .content-caixa {
+        width: calc(100% - 300px);
+    }
+
+    .content-operacao {
+        width: 300px;
+    }
+
+    .content-pdv {
+        width: 100%;
+    }
+
+    .table-caixa thead tr th {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .table-caixa tbody tr td {
+        padding: 0.5rem 0.3rem;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    #adicionar {
+        font-size: 11px;
+    }
+
+    #credito,
+    #debito,
+    #dinheiro,
+    #pix,
+    #a-prazo {
+        font-size: 10px;
+    }
+
+    .entrada-saida {
+        font-size: 12px;
+    }
+
+    .valor-recebido input,
+    #saida-troco input {
+        font-size: 16px;
+    }
+
+    #cancelar-compra button,
+    #finalizar-compra button {
+        font-size: 10px;
+    }
+
+    .subtotal .subtotal-value h1 {
+        font-size: 2rem;
+    }
+
+    #fechar-caixa {
+        font-size: 12px;
+    }
+
+    .finali-error h4 {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    /* FIM PDV */
+
+    
+}

@@ -1,0 +1,82 @@
+@import url('../../styles/fonts.css');
+.container-cliente {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #202225;
+}
+
+.content-cliente {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    background-color: #2D3033;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    overflow: hidden;
+    padding: 0.5rem;
+    border-radius: 7px;
+}
+
+.div-pesquisa-clientes {
+    width: 100%;
+    position: relative;
+    padding: 0 0.5rem;
+}
+
+.div-pesquisa-input-clientes {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.117);
+    background-color: #F2F2F2;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+
+.div-pesquisa-input-clientes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.117);
+    background-color: #F2F2F2;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.div-pesquisa-input-clientes #pesquisar {
+    height: 100%;
+    padding: 0 0.3rem;
+}
+
+.div-pesquisa-input-clientes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.261);
+}
+.div-pesquisa-input-clientes input {
+    font-family: "Montserrat";
+}
+
+.div-pesquisa-input-clientes button:hover {
+    background-color: #20222538;
+}
+
+.div-pesquisa-input-clientes #pesquisar {
+    margin-top: 0;
+    border: none;
+    color: black;
+    width: 100%;
+    outline: none;
+}

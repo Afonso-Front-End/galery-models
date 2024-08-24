@@ -1,0 +1,551 @@
+.container-pdv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #202225;
+    user-select: none;
+}
+
+.content-pdv {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #2D3033;
+}
+
+.container-caixa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.content-caixa {
+    width: calc(100% - 400px);
+    /* padding: 0.rem; */
+    overflow: auto;
+    background-color: #F2F2F2;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.content-caixa::-webkit-scrollbar {
+    width: 0;
+}
+
+.table-caixa {
+    width: 100%;
+    font-size: 14px;
+    user-select: none;
+    border-collapse: collapse;
+}
+
+.table-caixa thead {
+    background-color: #D93636;
+    font-family: "Montserrat";
+}
+
+.table-caixa thead tr th {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0.2rem;
+}
+
+.table-caixa tbody tr td {
+    padding: 0.5rem 0.3rem;
+    color: #202225;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* operacao */
+.content-operacao {
+    width: 400px;
+    padding: 0.3rem;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.content-operacao .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#codigo,
+#unidade,
+#adicionar {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+#codigo:focus,
+#unidade:focus {
+    color: #D93636;
+}
+
+#unidade::placeholder,
+#codigo::placeholder {
+    color: black;
+    font-family: "Montserrat";
+}
+
+#unidade:disabled::placeholder {
+    color: grey;
+}
+
+#adicionar {
+    color: #F2F2F2;
+    background-color: #03A64A;
+    cursor: pointer;
+}
+
+#adicionar:disabled {
+    cursor: no-drop;
+    background-color: #D93636;
+    text-transform: capitalize;
+}
+
+
+/* type pagamento */
+.type-pagamento {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.collun {
+    display: flex;
+    gap: 5px;
+}
+
+#credito,
+#debito,
+#dinheiro,
+#pix,
+#a-prazo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #202225;
+
+}
+
+#credito button,
+#debito button,
+#dinheiro button,
+#pix button,
+#a-prazo button {
+    height: 3.2rem;
+    border: 1px solid rgba(128, 128, 128, 0.261);
+    cursor: pointer;
+    background-color: #03A64A;
+}
+
+#credito button:disabled,
+#debito button:disabled,
+#dinheiro button:disabled,
+#pix button:disabled,
+#a-prazo button:disabled {
+    cursor: no-drop;
+    background-color: #D93636;
+}
+
+#credito p,
+#debito p,
+#dinheiro p,
+#pix p,
+#a-prazo p {
+    text-transform: capitalize;
+    user-select: none;
+    -webkit-user-select: none;
+    font-family: "Montserrat";
+}
+
+/* valores */
+.valores {
+    position: absolute;
+    bottom: 0;
+}
+
+.entrada-saida {
+    display: flex;
+    gap: 5px;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+#entrada-total,
+#saida-troco {
+    width: 100%;
+}
+
+.valor-recebido input,
+#saida-troco input {
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 1rem 0.5rem;
+    color: black;
+    font-family: "Montserrat";
+    margin-top: 5px;
+}
+
+.valor-recebido input:disabled {
+    color: #2D3033;
+}
+
+#saida-troco input:disabled {
+    color: #F2F2F2;
+    line-height: 100%;
+}
+
+/* finalizar */
+.finalizar-pagamento {
+    margin-top: 5px;
+}
+
+.finalizar {
+    display: flex;
+    gap: 5px;
+}
+
+#cancelar-compra,
+#finalizar-compra {
+    width: 100%;
+}
+
+#cancelar-compra button,
+#finalizar-compra button {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    font-family: "Montserrat";
+    color: #F2F2F2;
+}
+
+#cancelar-compra button:disabled,
+#finalizar-compra button:disabled {
+    cursor: no-drop;
+    color: black;
+}
+
+#finalizar-compra button:disabled,
+#cancelar-compra button:disabled {
+    background-color: #D93636;
+    color: black;
+}
+
+#cancelar-compra button {
+    background-color: #03A64A;
+}
+
+#finalizar-compra button {
+    background-color: #03A64A;
+}
+
+/* subtotal */
+.subtotal {
+    font-family: "Montserrat";
+    text-align: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+.subtotal .subtotal-value h1 {
+    font-size: 3rem;
+    font-weight: 400;
+
+}
+
+/* cancelar exclusao */
+.cancelar-exclusao {
+    width: 100%;
+    height: 100%;
+    /* background-color: #2d30336a; */
+    background-color: #2d3033;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    font-family: "Montserrat";
+
+}
+
+.cancelar-exclusao>div>h1 {
+    font-weight: 500;
+}
+
+.buttons-confirm button {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    font-size: 17px;
+}
+
+.buttons-confirm button:nth-child(1) {
+    background-color: #D93636;
+}
+
+.buttons-confirm button:nth-child(2) {
+    color: black;
+}
+
+/* message */
+.message {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat";
+}
+
+.message-res h3 {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+/* finalizacao */
+.sucess-finali {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finali {
+    background-color: #03A64A;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat";
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #aca9a660;
+}
+
+.finali h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.finali button {
+    width: 100px;
+    padding: 0.5rem;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.error-finali {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.finali-error {
+    background-color: #D93636;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat";
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #aca9a660;
+}
+
+.finali-error h4 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.finali-error button {
+    width: 100px;
+    padding: 0.5rem;
+    color: black;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* caixa aberto/fechado */
+.abrir-caixa {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menssage-aviso-caixa {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Montserrat";
+}
+
+.menssage-aviso-caixa button {
+    max-width: 100%;
+    width: 200px;
+    padding: 1rem 0;
+    cursor: pointer;
+    color: #202225;
+    margin-top: 10px;
+}
+
+.menssage-aviso-caixa h1 {
+    color: #202225;
+    /* text-transform: capitalize; */
+}
+
+
+.form-caixa {
+    width: 500px;
+    max-width: 100%;
+    height: 400px;
+    position: absolute;
+    /* background-color: #f2f2f2b4; */
+    background-color: #F2F2F2;
+    border: 1px solid #2d30332f;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Montserrat";
+}
+
+
+.topo-form-caixa {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.topo-form-caixa button {
+    border: none;
+    width: 40px;
+    height: 20px;
+    background-color: #D93636;
+    cursor: pointer;
+}
+
+.form-caixa form {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+}
+
+.form-caixa form h4 {
+    text-transform: capitalize;
+    padding: 0.5rem 0;
+}
+
+.form-caixa form h4,
+.form-caixa form label {
+    color: #202225;
+    margin-top: 5px;
+}
+
+.form-caixa form input {
+    padding: 0.8rem 0.3rem;
+    color: #202225;
+    border: none;
+    /* border-radius: 5px; */
+    outline: none;
+    text-transform: capitalize;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+.form-caixa form input:focus {
+    border-bottom: 1px solid #D93636;
+}
+
+.form-caixa form input[type="submit"] {
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* .form-caixa form input[type="submit"]:hover {
+   background-color: #5b636a;
+   color: #F2F2F2;
+} */
+.form-caixa form input[type="submit"]:focus {
+    border: none;
+}
+
+/* fechar caixa */
+#fechar-caixa {
+    padding: 0.5rem;
+    color: #202225;
+    background-color: #F2F2F2;
+    font-family: "Montserrat";
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    border: none;
+}

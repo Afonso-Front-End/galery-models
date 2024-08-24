@@ -1,0 +1,328 @@
+.container-table {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #202225;
+}
+
+.content-table {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    background-color: #2D3033;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.div-table {
+    height: calc(100% - 80px);
+    overflow: auto;
+    overflow-y: auto;
+    margin-top: 5px;
+    padding: 0.5rem;
+    /* position: relative; */
+    
+}
+
+.div-table::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    background-color: transparent;
+}
+
+
+.div-table::-webkit-scrollbar-thumb {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+}
+
+.table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    font-family: "Montserrat";
+}
+
+.table thead tr th {
+    padding: 0.2rem 0.5rem;
+    background-color: #D93636;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.table tbody tr td input {
+    background-color: #86BF5E;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    outline: none;
+    border: none;
+    color: #000000;
+    text-transform: capitalize;
+    font-family: "Montserrat";
+}
+
+.table tbody tr td input:disabled {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    outline: none;
+    border: none;
+    color: #F2F2F2;
+}
+
+
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f918;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f9f9f936;
+}
+
+.table tbody tr td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#copy {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    width: 34px;
+    border: none;
+    right: 0;
+    position: absolute;
+}
+
+#excluir,
+#editar {
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+#editar {
+    border-radius: 0;
+    color: black;
+    border: none;
+}
+
+.table thead tr th:nth-child(6) {
+    background-color: #86BF5E;
+}
+
+.table tbody tr td:nth-child(6) button,
+.table tbody tr td:nth-child(6) {
+    background-color: #86BF5E;
+    cursor: pointer;
+    text-align: center;
+}
+
+.table tbody tr td:nth-child(5) {
+    cursor: pointer;
+}
+
+.table tbody tr td:nth-child(5) {
+    background-color: #D93636;
+    position: relative;
+    text-align: center;
+}
+
+.table thead tr th:nth-child(3) {
+    background-color: #F2CB05;
+    color: #202225;
+    font-weight: 500;
+}
+
+.button-container {
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    padding: 0.2rem;
+    border-radius: 3px;
+}
+
+.button-container button {
+    width: 100%;
+    height: 41px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.button-container button:nth-child(1) {
+    background-color: #D93636;
+}
+
+.button-container button:nth-child(2) {
+    background-color: #86BF5E;
+}
+
+
+.table tbody tr td:nth-child(5) td {
+    position: absolute;
+    z-index: 10000;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+
+}
+
+.table tbody tr td:nth-child(5) td button {
+    width: 100%;
+    background-color: transparent;
+}
+
+.table tbody {
+    position: relative;
+}
+
+.table tbody tr td:nth-child(3) input {
+    color: #202225;
+    font-weight: 500;
+}
+
+.table tbody tr td:nth-child(3) input:disabled {
+    background-color: #F2CB05;
+    color: #202225;
+    font-weight: 500;
+}
+
+/* excluir-confirme */
+.excluir-confirme,
+.resultado {
+    width: 100%;
+    height: 100%;
+    /* background-color: #2d30336a; */
+    background-color: #2d3033;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.confirme {
+    width: 100%;
+    max-width: 300px;
+    height: 70px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.data-product {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem 0;
+}
+
+.data-product h1,
+.resultado h1 {
+    -webkit-app-region: drag;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+.resultado h2 {
+    text-align: center;
+    width: 100%;
+}
+
+.data-product p {
+    -webkit-app-region: drag;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.confirme button:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background-color: #D93636;
+    border: none;
+    cursor: pointer;
+}
+
+.confirme button:nth-child(2) {
+    background-color: #86BF5E;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* inicio */
+.container-inicio {
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: #2D3033;
+}
+
+.content-inicio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #F2F2F2; */
+    background-color: #D9D9D9;
+    border-radius: 7px;
+}
+
+.message-inicio h1 {
+    color: #202225;
+}
+
+#erro-table {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #D93636;
+    margin-top: 1.1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    position: relative;
+    top: -95px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+#sucess-table {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #86BF5E;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

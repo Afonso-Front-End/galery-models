@@ -1,0 +1,172 @@
+.container-form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0.5rem;
+    background-color: #202225;
+}
+
+.content-form {
+    width: inherit;
+    height: 100%;
+    position: relative;
+    background-color: #2D3033;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.form {
+    width: 100%;
+    /* max-width: 1000px; */
+    height: 100%;
+    /* height: 500px; */
+    background-color: #202225;
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.table-form {
+    width: 100%;
+    font-family: "Montserrat";
+}
+
+.table-form thead tr th {
+    border-collapse: collapse;
+    background-color: #D93636;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 0.4rem 0rem;
+}
+
+.table-form thead tr th:nth-child(5),
+.table-form thead tr th:nth-child(6) {
+    width: 60px;
+}
+
+.table-form tbody tr td input {
+    width: 100%;
+    padding: 0.7rem 0.3rem;
+    background-color: #f9f9f936;
+    color: #F2F2F2;
+    /* font-weight: 700; */
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    font-family: "Montserrat";
+}
+.table-form tbody tr td input:focus {
+    background-color: #D93636;
+}
+
+.table-form tbody tr td input::placeholder {
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+.table-form tbody tr:nth-child(odd) {
+    background-color: #f9f9f936;
+}
+
+.table-form tbody tr td:nth-child(5),
+.table-form tbody tr td:nth-child(6) {
+    background-color: #f9f9f936;
+    text-align: center;
+}
+
+#limpar,
+#salvar {
+    background-color: transparent;
+    width: 100%;
+    height: 42px;
+    border: none;
+    cursor: pointer;
+}
+
+#limpar:hover,
+#salvar:hover {
+    border: 1.5px solid black;
+}
+
+#limpar:hover {
+    background-color: #D93636;
+}
+
+#salvar:hover {
+    background-color: #86BF5E;
+}
+
+.info-form-table {
+    position: absolute;
+    bottom: 10px;
+    /* background-color: #F2F2F2; */
+    width: 100%;
+    left: 0;
+    height: 50px;
+    padding: 0 0.5rem;
+}
+
+.info-form-table p {
+    text-transform: uppercase;
+    background-color: #2D3033;
+    padding: 0.2rem 0.5rem;
+    font-weight: 300;
+}
+
+.messagesucess,
+.messageerror {
+    margin-top: 6px;
+    height: calc( 100% - 110px);
+    border-radius: 4px;
+    font-family: "Montserrat";
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messagesucess p,
+.messageerror p {
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-size:20px;
+    background-color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #202225;
+    box-shadow:  5px 5px 0px #202225;
+}
+
+.messagesucess {
+    background-color: #86BF5E;
+}
+
+.messageerror {
+    background-color: #D93636;
+}
+
+/* topo exite */
+.topo-exite-inicio-cadastro{
+    background-color: #D93636;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.topo-exite-inicio-cadastro #exite{
+   background-color: #F2F2F2;
+   border: none;
+   width: 60px;
+   height: 100%;
+   cursor: pointer;
+}

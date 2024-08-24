@@ -1,0 +1,46 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .table-venda thead tr th {
+        font-size: 10px;
+    }
+
+    .table-venda tbody tr td {
+        font-size: 11px;
+    }
+
+    .table-title h1 {
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    .list-order {
+        width: 150px;
+        height: 30px;
+    }
+
+    .list-order ol li {
+        height: 30px;
+    }
+
+    .list-order-active {
+        height: 150px;
+    }
+
+    .topo-data-selecionada p {
+        font-size: 16px;
+    }
+
+    .table-data .table tbody tr td {
+        padding: 0.5rem;
+        cursor: pointer;
+        font-size: 11px;
+    }
+
+    .div-footer p {
+        font-size: 18px;
+    }
+
+    .nota-fiscal {
+        width: 400px;
+        height: 95%;
+    }
+}

@@ -1,0 +1,49 @@
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .list-users-fechamento {
+        width: 260px;
+    }
+
+    .container-text {
+        width: calc(100% - 260px);
+    }
+    .container-table-fechamento {
+        width: calc(100% - 260px);
+        height: inherit;
+        background-color: #202225;
+        padding: 0.3rem;
+        border-radius: 7px;
+        overflow: hidden;
+    }
+
+    .list-users-fechamento ol li {
+        padding: 0.1rem;
+        font-size: 12px;
+    }
+
+    .list-users-fechamento ol li .div-ol button {
+        font-size: 10px;
+    }
+
+    .table-fechamento table thead tr th,
+    .table-fechamento table tbody tr td {
+        font-size: 10px;
+    }
+
+    .table-fechamento table tbody tr td {
+        font-size: 10px;
+        padding: 0.3rem;
+    }
+
+    .items-table table thead tr th {
+        font-size: 10px;
+        padding: 0.3rem;
+    }
+
+    .detalhes-table-fechamento div button p {
+        font-size: 10px;
+    }
+
+    .detalhes-table-fechamento div button p:nth-child(2) {
+        font-size: 15px;
+    }
+}

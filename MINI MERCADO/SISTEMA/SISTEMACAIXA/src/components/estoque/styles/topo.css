@@ -1,0 +1,76 @@
+.form-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    padding: 0.3rem 0rem;
+}
+
+.form-pesquisa {
+    width: 100%;
+    position: relative;
+    height: 75px;
+    padding: 0 0.5rem;
+}
+
+.div-pesquisa-input {
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.117);
+    background-color: #F2F2F2;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.div-pesquisa-input #pesquisar {
+    height: 100%;
+    padding: 0 0.3rem;
+}
+
+.div-pesquisa-input button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.261);
+}
+
+.div-pesquisa-input button:hover {
+    background-color: #20222538;
+}
+
+
+.div-pesquisa-input #pesquisar {
+    margin-top: 0;
+    border: none;
+    color: black;
+    width: 100%;
+    outline: none;
+}
+
+.erro-pequisa {
+    background-color: #F2F2F2;
+    margin-top: 0.5rem;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    position: relative;
+    z-index: 10000;
+}
+
+.erro-pequisa p {
+    color: black;
+}

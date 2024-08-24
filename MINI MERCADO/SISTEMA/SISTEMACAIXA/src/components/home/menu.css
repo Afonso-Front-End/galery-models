@@ -1,0 +1,82 @@
+.topo {
+    /* height: 150px; */
+}
+.topo h1 {
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+menu {
+    height: 100%;
+    overflow: auto;
+    user-select: none;
+}
+
+menu nav {
+    padding: 0.5rem 0.5rem;
+}
+
+menu nav ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+menu::-webkit-scrollbar {
+    width: 3px;
+    background-color: transparent;
+}
+
+menu::-webkit-scrollbar-thumb {
+    background-color: #D93636;
+    border-radius: 30px;
+}
+
+menu nav ul li {
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+menu nav ul li:hover {
+    background-color: #2d303363;
+}
+
+
+menu nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    cursor: grab;
+}
+
+
+.selected {
+    background-color: #2D3033;
+}
+
+.selected a {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.selected span {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #D93636;
+    position: absolute;
+    left: 0px;
+}
+hr {
+    border: 1px solid rgba(128, 128, 128, 0.292);
+}
